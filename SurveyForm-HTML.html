@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+body{
+  background: rgb(254, 251, 250);
+  font-size: 13px;
+  line-height: 25px;
+  padding: 70px 40px 70px 40px;
+  font-family: calibri;
+}
+
+#title {
+    text-align: center;
+    font-family: 'Sacramento';
+    font-size: 60px;
+}
+
+#description {
+    margin-top: -20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#box-container {
+  display: flex;
+  justify-content: center;
+}
+
+#box-2 {
+  margin-left: 70px;
+}
+
+#number {
+  padding-right: 120px;
+}
+
+#dropdown {
+  padding-right: 105px
+}
+
+#improve-options {
+  margin-left: 630px;
+  text-align: left;
+}
+
+#part3 {
+  text-align: center;
+}
+
+#submit {
+  background: rgb(255, 175, 175);
+  font-family: sans-serif;
+}
+
+input:hover {
+  color: red;
+}
+    </style>
+    <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type="text/css">
+    </head>
+
+
+<body>
+<h1 id="title">Tell Us About Free People</h1>
+
+<p id="description"><em>This is a survey to help us know <span style="color: red;">you</span> better.</em></p>
+ 
+
+<form id="survey-form" action="/action_page.php">
+<hr><div id="box-container">
+<div id="box-1">
+    <label id="name-label">Name</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>       <br>
+
+    <label id="number-label">Age(optional)</label><br>
+    <input type="number" id="number" name="number" min="9" max="100"                        placeholder="Age">
+</div>
+
+<div id="box-2">
+    <label id="email-label">Email</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your Email" required><br>  
+  
+    <label id= "dropdown-label">How often do you visit our store?</label><br>
+    <select id="dropdown" name="dropdown" required>
+    <option value="Never">Never</option>
+    <option value="Occasionally">Occasionally</option>
+    <option value="Sometimes">Sometimes</option>
+    <option value="Often">Often</option>
+    <option value="Regularly">Regularly</option>
+    </select>
+</div>
+</div>
+<div id="part3">
+    <h2>Did you easily find what you need?</h2>
+    <label for="yes">
+    <input id="yes" value="yes" type="radio" name="yes-no">Yes</label>
+    <label for="no">
+    <input id="no" value="no" type="radio" name="yes-no">No</label><br>
+    
+    <h2><label id= "dropdown2-label">How likely are you to purchase our products again?</label></h2><select id="dropdown2" name="dropdown" required>
+    <option value="Not likely at all">Not likely at all</option>
+    <option value="Not likely">Not likely</option>
+    <option value="likely">likely</option>
+    <option value="Very likely">Very likely</option>
+    </select><br> 
+  
+    <h2>What should we improve on?</h2>
+  
+<div id="improve-options">  
+  <label for="policies"><input id="policies" value="policies" type="checkbox" name="improve">Return/refund policies ( eg.returns,refunds,gift cards and unclear promotions)  </label><br>
+  
+    <label for="online"><input id="online" value="online" type="checkbox" name="improve">Online experience ( eg.transaction, ordering and shipping )</label><br> 
+
+    <label for="in-store"><input id="in-store" value="in-store" type="checkbox" name="improve">In-store experience ( eg.interactions with sales associates )</label><br>
+    
+    <label for="quality"><input id="quality" value="quality" type="checkbox" name="improve">Product quality</label><br>
+    
+     <label for="none"><input id="none" value="none" type="checkbox" name="improve">None</label><br></div>
+    
+     <h2> What other products would you be interested in purchasing from us?</h2>
+    <textarea id="competitor" placeholder="The sky is the limit." rows="4" cols="50"></textarea><br>
+    
+    <h2>What made you choose us over our competitors?</h2>
+    <textarea id="competitor" placeholder="If you just happen to be here that's okay too :)" rows="4" cols="50"></textarea><br>
+    
+    <input type="submit" value="SUBMIT" id="submit"></div>                 
+</form>
+    </body>
+    </html>
